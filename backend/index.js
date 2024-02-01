@@ -39,6 +39,7 @@ app.post("/books", async (request, response) => {
 		response.status(500).send({ message: error.message });
 	}
 });
+
 //Route for GET all books from database
 app.get("/getAllBooks", async (request, response) => {
 	try {
@@ -68,7 +69,6 @@ app.get("/books/:id", async (request, response) => {
 });
 
 //Route for update a book
-
 app.put("/book/:id", async (request, response) => {
 	try {
 		if (
