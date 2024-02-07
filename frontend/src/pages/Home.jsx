@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Spinner from "../components/Spinner";
@@ -15,7 +16,6 @@ function Home() {
 			.get("http://localhost:5555/books")
 			.then((response) => {
 				setBooks(response.data.data);
-				console.log(response.data.data + "wertyuiop[");
 				setLoading(false);
 			})
 			.catch((error) => {

@@ -10,16 +10,11 @@ const app = express();
 // Middleware for parsing request body
 app.use(express.json());
 
-//Middleware for handlig CORS POLICY
+//Middleware for handling CORS POLICY
 //Option 1: Allow all origins with default of cors(*)
 app.use(cors());
 
 //Option 2: Allow custom origin
-
-// fron	
-
-
-//----------------------------------------------z
 
 // app.get("/api/name", (request, response) => {
 // 	console.log(request);
